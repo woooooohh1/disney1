@@ -4,9 +4,11 @@
   h2,h3{font-family: 'Noto Sans KR','Noto Sans',Arial, Helvetica, sans-serif; color: #333;}
   a{text-decoration: none;}
 
+  body{margin-top: 50px;}
   /* article 1 서식 */
   
   article{margin-top: 40px !important; }
+  .article01{margin-top: 80px !important; }
   .article01{margin:0px auto;width: 313px; height: 355px;}
   .article01 h2,.article02 h2,.article03 h2{
     font-size: 32px;

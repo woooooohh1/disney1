@@ -1,17 +1,20 @@
 @charset "utf-8";
-
+section{
+  margin-top: 100px;
+}
 /* pc버전 */
 @media screen and (min-width:1025px){
-  article{
-  /* margin-top:50px; */
-  margin-left:50%;
-  margin-bottom:100px;
-  transform:translate(-50%);
-  height:710px;
-  /* background-color: bisque; */
-  }
 
-  article h2 img{
+  main{
+    width:100%;
+    height:900px;
+    /* display:flex; */
+    justify-content: center;
+    align-items: center;
+    /* margin:0px 0px 150px 0px; */
+    }
+
+  .logo{
   margin:50px 0px 30px 0px;
   width:10rem;
   margin-left:50%;
@@ -20,9 +23,7 @@
 
 
   .top{
-  color:#0A2647;
-  /* background-color: rgb(231, 89, 229); */
-  }
+  color:#0A2647;}
   .top p{
   margin-bottom: 30px;
   font-size:14px;
@@ -128,13 +129,13 @@
     height:710px;
     /* background-color: bisque; */
     }
-  
-    article h2 img{
-    margin:50px 0px 30px 0px;
-    width:10rem;
-    margin-left:50%;
-    transform:translate(-50%);
-    }
+
+    .logo{
+      margin:50px 0px 30px 0px;
+      width:10rem;
+      margin-left:50%;
+      transform:translate(-50%);
+      }
   
   
     .top{
@@ -162,7 +163,8 @@
     .sub_form{
     /* background-color: aquamarine; */
     width:430px;height:260px;
-    margin:0px auto;
+    margin-left:50%;
+    transform:translateX(-50%);
     padding-bottom: 30px;
     }
   
@@ -247,12 +249,12 @@
     /* background-color: bisque; */
     }
   
-    article h2 img{
-    margin:50px 0px 30px 0px;
-    width:10rem;
-    margin-left:50%;
-    transform:translate(-50%);
-    }
+    .logo{
+      margin:50px 0px 30px 0px;
+      width:10rem;
+      margin-left:50%;
+      transform:translate(-50%);
+      }
   
   
     .top{
@@ -280,7 +282,8 @@
     .sub_form{
     /* background-color: aquamarine; */
     width:430px;height:260px;
-    margin:0px auto;
+    margin-left:50%;
+    transform: translateX(-35%);
     padding-bottom: 30px;
     }
   

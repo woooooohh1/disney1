@@ -3,9 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="Robots" content="noindex, nofollow">
+  <meta name="keywords" content="디즈니코리아">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-  <title>Bteam - main</title>
+  <meta name="og:site_name" content="Disney Korea">
+  <meta name="og:description" content="Disney Korea">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <title>월트 디즈니 코리아에 오신것을 환영합니다.</title>
   <link rel="stylesheet" href="./css/base.css" type="text/css">
   <link rel="stylesheet" href="./css/common.css" type="text/css">
   <link rel="stylesheet" href="./css/main.css" type="text/css">
@@ -64,7 +68,7 @@
             </ul>
           </li>
           <li>
-            <a href="m_channel.html" title="채널">Channel
+            <a href="channel.html" title="채널">Channel
             </a>
             <img class="sub_btn" src="./main_img/arrow_down.png" alt="서브메뉴보기">
             <ul class="sub">
@@ -101,14 +105,16 @@
     </div>
   </header>
   
-<!-- top 버튼 -->
+  <!-- top 버튼 -->
   <a href="#none" title="맨위로올라가기" id="top_btn">
     <img src="./main_img/top_btn.png" alt="top버튼">
   </a>
+
   <!-- 메인영역 -->
     <article class="main-video">
       <h2>메인영상</h2>
-      <video controls  autoplay loop="infinite" muted> 
+      <!-- controls 제거 muted로 음소거 infinite -> loop -->
+      <video autoplay loop="loop" muted> 
         <source src="./main_video.mp4" type="video/mp4">
       </video> 
       <p>
@@ -126,7 +132,7 @@
           와 함께하는 1주년 이벤트!
           </h2>
         </div>
-        <iframe src="https://www.youtube.com/embed/9XPwaO_cGj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        <iframe src="https://www.youtube.com/embed/9XPwaO_cGj0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
         </iframe>
 
         <ul class="e_txt">
@@ -174,27 +180,24 @@
     <section class="disney_films">
       <h2>DisneyKorea Films</h2>
       <ul>
-        <li><a href="#none" title="아바타2">
-          <img src="./main_img/movie1.png" alt="아바타2"></a>
-          <div class="film_txt">
+        <li id="film_img1">
+          <div class="film_txt" id="film_txt01">
             <p>"판도라의 바다,새로운 세계가 펼쳐진다."</p>
             <h3>아 바 타2 : 물 의   길<br>
               12월  절 찬 상 영 중
             </h3>
           </div>
         </li>
-        <li><a href="#none" title="인사이드 아웃2">
-          <img src="./main_img/movie2.png" alt="인사이드 아웃2"></a>
-          <div class="film_txt">
+        <li id="film_img2">
+          <div class="film_txt" id="film_txt02">
             <p>"오늘의 기분은? 재미가 업그레이드 된"</p>
             <h3>인 사 이 드 아 웃 2<br>
               C O M I N G  S O O N!
             </h3>
           </div>
         </li>
-        <li><a href="#none" title="인디아나존스5">
-          <img src="./main_img/movie3.png" alt="인디아나존스5"></a>
-          <div class="film_txt">
+        <li id="film_img3">
+          <div class="film_txt" id="film_txt03">
             <p>"스티븐스필버그 감독의 새로운 도전"</p>
             <h3>인 디 아 나 존 스 : 운 명 의  다 이 얼<br>
             C O M I N G  S O O N!</h3>
@@ -220,12 +223,12 @@
 
 
         <ul class="b_gallery">
-          <li class="brand"><a href="m_channel.html" title="디즈니채널"><img src="./main_img/Disney_logo.png" alt="디즈니"></a></li>
-          <li class="brand"><a href="m_channel.html" title="픽사채널"><img src="./main_img/Pixar_logo.png" alt="픽사"></a></li>
-          <li class="brand"><a href="m_channel.html" title="마블채널"><img src="./main_img/marvel_logo.png" alt="마블"></a></li>
-          <li class="brand"><a href="m_channel.html" title="스타워즈채널"><img src="./main_img/starwars_logo.png" alt="스타워즈"></a></li>
-          <li class="brand"><a href="m_channel.html" title="네이셔널 지오그래픽채널"><img src="./main_img/national_geographic_logo.png" alt="네이셔널 지오그래픽"></a></li>
-          <li class="brand"><a href="m_channel.html" title="20세기 스튜디오채널"><img src="./main_img/20th_studios.png" alt="20세기 스튜디오"></a></li>        
+          <li class="brand"><a href="channel.html" title="디즈니채널"><img src="./main_img/Disney_logo.png" alt="디즈니"></a></li>
+          <li class="brand"><a href="channel.html" title="픽사채널"><img src="./main_img/Pixar_logo.png" alt="픽사"></a></li>
+          <li class="brand"><a href="channel.html" title="마블채널"><img src="./main_img/marvel_logo.png" alt="마블"></a></li>
+          <li class="brand"><a href="channel.html" title="스타워즈채널"><img src="./main_img/starwars_logo.png" alt="스타워즈"></a></li>
+          <li class="brand"><a href="channel.html" title="네이셔널 지오그래픽채널"><img src="./main_img/national_geographic_logo.png" alt="네이셔널 지오그래픽"></a></li>
+          <li class="brand"><a href="channel.html" title="20세기 스튜디오채널"><img src="./main_img/20th_studios.png" alt="20세기 스튜디오"></a></li>        
         </ul>
       </div>
     </section>
@@ -271,7 +274,6 @@
               <a href="#none" title="새로운소식태그" class="tag">&#35;디즈니+</a>
             </p>
           </li>
-          <li></p><a href="news.html">전체보기 &gt;</a></li>
         </ul>
       </div>
     </section>
